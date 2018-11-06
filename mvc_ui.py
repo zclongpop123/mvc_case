@@ -19,9 +19,11 @@ class MVCWindow(mvc_qt.Ui_MainWindow, QtWidgets.QMainWindow):
         #- 
         self.__list_model = mvc_model.MVC_List_Model(self.listView, list('ABCDE'))
         self.listView.setModel(self.__list_model)
+        self.listView_2.setModel(self.__list_model)
 
         self.__table_model = mvc_model.MVC_table_model(self.tableView, [['A2', 'B2', 'A3', 'B4'], ['B1', 'B2', 'B3', 'B4']])
         self.tableView.setModel(self.__table_model)
+        self.tableView_2.setModel(self.__table_model)
 
         self.__delegate = mvc_delegate.ComboDelegate()
         self.listView.setItemDelegate(self.__delegate)
