@@ -3,7 +3,7 @@
 #      mail: zclongpop123@163.com
 #      time: Tue Nov 06 10:58:26 2018
 #========================================
-from PyQt5 import QtCore, QtGui
+from PySide2 import QtCore, QtGui
 #--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
 class MVC_List_Model(QtCore.QAbstractListModel):
     '''

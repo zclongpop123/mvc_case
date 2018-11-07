@@ -4,10 +4,14 @@
 #      time: Tue Nov 06 10:54:12 2018
 #========================================
 import sys
-from PyQt5 import QtCore, QtWidgets, QtGui
+from PySide2 import QtCore, QtWidgets, QtGui
 import mvc_qt, mvc_model, mvc_delegate
+import lib.uic
 #--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
-class MVCWindow(mvc_qt.Ui_MainWindow, QtWidgets.QMainWindow):
+window_blass, base_class = lib.uic.loadUiType('D:/work/mvc_case/mvc_qt.ui')
+
+#class MVCWindow(mvc_qt.Ui_MainWindow, QtWidgets.QMainWindow):
+class MVCWindow(window_blass, base_class):
     '''
     '''
     def __init__(self, parent=None):
@@ -30,7 +34,7 @@ class MVCWindow(mvc_qt.Ui_MainWindow, QtWidgets.QMainWindow):
 
 
 
-    @QtCore.pyqtSlot(bool)
+    @QtCore.Slot(bool)
     def on_btn_lsv_insert_clicked(self, args):
         '''
         '''
@@ -40,7 +44,7 @@ class MVCWindow(mvc_qt.Ui_MainWindow, QtWidgets.QMainWindow):
 
 
 
-    @QtCore.pyqtSlot(bool)
+    @QtCore.Slot(bool)
     def on_btn_lsv_remove_clicked(self, args):
         '''
         '''
@@ -49,7 +53,7 @@ class MVCWindow(mvc_qt.Ui_MainWindow, QtWidgets.QMainWindow):
 
 
 
-    @QtCore.pyqtSlot(bool)
+    @QtCore.Slot(bool)
     def on_btn_lsv_clear_clicked(self, args):
         '''
         '''

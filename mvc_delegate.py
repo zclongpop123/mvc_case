@@ -3,7 +3,7 @@
 #      mail: zclongpop123@163.com
 #      time: Tue Nov 06 11:55:05 2018
 #========================================
-from PyQt5 import QtCore, QtWidgets
+from PySide2 import QtCore, QtWidgets
 #--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
 class ComboDelegate(QtWidgets.QStyledItemDelegate):
     '''
