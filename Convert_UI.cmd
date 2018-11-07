@@ -1,2 +1,2 @@
-C:\Python27\Lib\site-packages\PyQt5\pyuic5.bat mvc_qt.ui > mvc_qt.py
+C:\Python27\Lib\site-packages\PySide2\scripts\uic.py -o mvc_qt.py mvc_qt.ui
 pause
